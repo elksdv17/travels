@@ -1,0 +1,89 @@
+.block{
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s ease-in;
+}
+
+.block-translate{
+    background-color: teal;
+    position: relative;
+    left: 50%;
+    transform: translateX(-45);
+}
+.block-scale{
+    background: orange;
+    margin: auto;
+}
+
+.block-scale:hover{
+    transform: scale(2);
+}
+
+.block-rotate{
+  background: rosybrown;
+  transition: 0.4s ease-in;
+}
+.block-rotate:hover{
+    transform: rotate(360deg);
+}
+
+.block-skew{
+    background: red;
+}
+.block-skew:hover{
+    transform: skew(-50deg);
+}
+
+.block2d{
+    background: burlywood;
+    transform: matrix(1.5,3,0,1,110,100)
+}
+
+.block3d{
+    perspective: 500px;
+}
+.block3d-translate{
+    width: 150px;
+    height: 150px;
+    background: red;
+    transition: 0.4s ease-in;
+}
+.block3d-translate:hover{
+    /* transform: translate3d(100px,100px,50px); */
+    /* transform: scale3d(1.5,1.5,1.5); */
+    transform: rotate3d(1,1,1, 90deg);
+}
+.box{
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    background: teal;
+
+    animation-name: box-to-right;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}   
+@keyframes box-to-right{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: rotate(12);
+    }
+    100%{
+        transform: rotate(1.5);
+    }
+}
+
+.kepka{
+    width: 150px;
+    height: 150px;
+    background: purple;
+    transition:0.5s ease-in;
+}
+.kepka:hover{
+    transform: rotate(580deg);
+}
+
+
